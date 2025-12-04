@@ -9,6 +9,7 @@ import './styles/sections/mente.css';
 import './styles/sections/energia.css';
 import './styles/sections/creacion.css';
 import './styles/sections/manifesto.css';
+import './styles/sections/origen.css';
 
 import { domReady } from './core/domReady.js';
 import { initIntroAnimation } from './animations/introAnimation.js';
