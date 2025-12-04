@@ -1,0 +1,26 @@
+.creacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.creacion__content {
+  width: 100%;
+  max-width: 740px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding-top: var(--space-sm);
+}
+
+.creacion__title {
+  margin: 0;
+  color: var(--color-text-main);
+}
+
+.creacion__lead {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  line-height: 1.75;
+  color: var(--color-text-muted);
+}

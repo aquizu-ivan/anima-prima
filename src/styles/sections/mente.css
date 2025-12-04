@@ -1,0 +1,25 @@
+.mente {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mente__content {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.mente__title {
+  margin: 0;
+  color: var(--color-accent-2);
+}
+
+.mente__lead {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
