@@ -1,0 +1,24 @@
+.manifesto {
+  display: flex;
+  justify-content: center;
+}
+
+.manifesto__content {
+  width: 100%;
+  max-width: 780px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin: 0 auto;
+}
+
+.manifesto__title {
+  margin: 0 0 var(--space-md);
+}
+
+.manifesto-text {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  line-height: 1.85;
+  color: var(--color-text-muted);
+}
