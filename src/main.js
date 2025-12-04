@@ -6,16 +6,8 @@ import './styles/components.css';
 import './styles/sections/intro.css';
 
 import { domReady } from './core/domReady.js';
-import { gsap } from 'gsap';
+import { initIntroAnimation } from './animations/introAnimation.js';
 
 domReady(() => {
-  const introTitle = document.querySelector('.intro__title');
-
-  if (!introTitle) return;
-
-  gsap.fromTo(
-    introTitle,
-    { opacity: 0, y: 24 },
-    { opacity: 1, y: 0, duration: 1.2, ease: 'power2.out' }
-  );
+  initIntroAnimation();
 });
