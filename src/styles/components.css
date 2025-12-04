@@ -1,25 +1,49 @@
 a {
-  color: var(--color-accent-2);
+  color: var(--color-accent-1);
   text-decoration: none;
-  transition: color var(--motion-duration-short) ease;
+  transition: color var(--motion-duration-short) var(--motion-ease-base),
+    text-decoration-color var(--motion-duration-short) var(--motion-ease-base);
+  text-decoration-color: transparent;
 }
 
 a:hover {
-  color: var(--color-accent-1);
+  color: var(--color-accent-2);
+  text-decoration: underline;
+  text-decoration-color: currentColor;
 }
 
-button {
-  background: transparent;
-  color: var(--color-text);
-  border: 1px solid rgba(245, 245, 240, 0.25);
-  padding: var(--space-xs) var(--space-sm);
+a:focus-visible {
+  outline: 2px solid var(--color-accent-2);
+  outline-offset: 2px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-md);
+  background-color: var(--color-accent-1);
+  color: var(--color-bg-main);
+  border: 1px solid var(--color-accent-1);
   border-radius: 999px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
   cursor: pointer;
-  transition: transform var(--motion-duration-short) ease,
-    border-color var(--motion-duration-short) ease;
+  transition: transform var(--motion-duration-short) var(--motion-ease-base),
+    box-shadow var(--motion-duration-short) var(--motion-ease-base),
+    background-color var(--motion-duration-short) var(--motion-ease-base),
+    border-color var(--motion-duration-short) var(--motion-ease-base);
 }
 
-button:hover {
+.btn:hover {
   transform: translateY(-1px);
-  border-color: var(--color-accent-1);
+  background-color: var(--color-accent-2);
+  border-color: var(--color-accent-2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-accent-2);
+  outline-offset: 3px;
 }

@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap');
 
 body {
-  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
   letter-spacing: 0.01em;
+}
+
+p,
+li {
+  font-size: var(--font-size-base);
+  line-height: 1.7;
+  margin: 0 0 var(--space-sm);
+  color: var(--color-text-main);
 }
 
 h1,
@@ -11,19 +20,21 @@ h3,
 h4 {
   margin: 0 0 var(--space-sm);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 h1 {
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-size: var(--font-size-xxl);
   letter-spacing: 0.08em;
 }
 
 h2 {
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: var(--font-size-xl);
   color: var(--color-accent-1);
 }
 
-p {
-  margin: 0 0 var(--space-sm);
+.manifesto-text {
+  font-size: var(--font-size-lg);
+  line-height: 1.8;
+  color: var(--color-text-muted);
 }
