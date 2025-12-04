@@ -1,0 +1,25 @@
+a {
+  color: var(--color-accent-2);
+  text-decoration: none;
+  transition: color var(--motion-duration-short) ease;
+}
+
+a:hover {
+  color: var(--color-accent-1);
+}
+
+button {
+  background: transparent;
+  color: var(--color-text);
+  border: 1px solid rgba(245, 245, 240, 0.25);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform var(--motion-duration-short) ease,
+    border-color var(--motion-duration-short) ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  border-color: var(--color-accent-1);
+}
