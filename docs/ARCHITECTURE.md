@@ -11,6 +11,12 @@ GSAP actua como motor de animacion para transiciones fluidas y microinteraccione
 
 La arquitectura separa entry point, capa core, animaciones por seccion y estilos modulados. Esto permite evolucionar cada capa sin acoplar la experiencia completa.
 
+### Sistema de Ritmo Interno (`src/animation/ritmoInterno.js`)
+- Rol: motor central de presencia que registra GSAP + ScrollTrigger, crea tweens por elemento y los vincula a su seccion con ScrollTrigger. Gestiona estado global de ritmo (reposo, atencion, transicion) y respeta `prefers-reduced-motion: reduce` (no inicializa si aplica).
+- Relacion con otros modulos: `src/main.js` orquesta el arranque y llama a `initRitmoInterno()` tras el DOM listo; `animations/introAnimation.js` mantiene la animacion especifica de intro mientras `ritmoInterno.js` maneja la respiracion continua de la obra.
+- Data-atributos consumidos: `data-ritmo="core"` (nodos nucleares como contenedores/titulos principales), `data-ritmo="texto"` (frases lead, manifiesto, contacto), `data-ritmo="atmósfera"` (contenedores que construyen ambiente) y `data-ritmo-seccion="..."` (intro, cuerpo, mente, energia, creacion, manifiesto/origen, contacto).
+- Comportamiento: tweens creados pausados; ScrollTrigger activa/pausa segun seccion visible (`start: top 80%`, `end: bottom 20%`). Estados modifican `timeScale` global (reposo base, atencion ligeramente mas vivo, transicion ligeramente mas lento para usos futuros).
+
 Stack y herramientas
 --------------------
 - Vite (dev/build/preview).
