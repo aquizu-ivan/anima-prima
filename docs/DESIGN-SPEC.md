@@ -3,7 +3,7 @@ Especificacion de diseno - ANIMA PRIMA
 
 Concepto central
 ----------------
-ANIMA PRIMA es una experiencia minimalista basada en cuerpo-mente-energia-creacion, vinculada a un manifiesto personal. Se busca transmitir calma, profundidad y foco, eliminando ruido visual y priorizando la intencion en cada seccion.
+ANIMA PRIMA es una experiencia minimalista basada en cuerpo-mente-energia-creacion, vinculada a un manifiesto personal. Creada por IAQUIZU - IA-Extended Visual Systems Architect, es la obra de origen que antecede a piezas como Verum Motus y Umbral. Se busca transmitir calma, profundidad y foco, eliminando ruido visual y priorizando la intencion en cada seccion.
 
 La sensacion deseada es de respiracion y recogimiento: pocos elementos, silencios visuales y ritmo controlado para que cada transicion se sienta deliberada.
 
