@@ -5,6 +5,8 @@ Resumen del proyecto
 --------------------
 ANIMA PRIMA es una Single Page Experience creada con Vite y JavaScript ES Modules, pensada como un recorrido conceptual por secciones (Intro, Cuerpo, Mente, Energia, Creacion, Manifiesto, Origen y Contacto). No es una app de formularios ni CRUD, sino una pieza digital que guia al usuario a traves de estados e ideas.
 
+Obra digital contemplativa de IAQUIZU - IA-Extended Visual Systems Architect; pieza de origen del conjunto de obras que se expandira en Verum Motus y Umbral.
+
 GSAP actua como motor de animacion para transiciones fluidas y microinteracciones discretas. El foco esta en la narrativa visual y el ritmo, manteniendo el DOM ligero y la logica acotada a lo esencial.
 
 La arquitectura separa entry point, capa core, animaciones por seccion y estilos modulados. Esto permite evolucionar cada capa sin acoplar la experiencia completa.
