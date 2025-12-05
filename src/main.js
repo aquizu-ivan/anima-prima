@@ -13,7 +13,9 @@ import './styles/sections/origen.css';
 
 import { domReady } from './core/domReady.js';
 import { initIntroAnimation } from './animations/introAnimation.js';
+import { initRitmoInterno } from './animation/ritmoInterno.js';
 
 domReady(() => {
   initIntroAnimation();
+  initRitmoInterno();
 });
