@@ -28,16 +28,17 @@ Principios de animacion y movimiento
 - Movimiento que sugiera respiracion y transito interno entre estados.
 - GSAP es el motor principal; ScrollTrigger se integrara mas adelante para sincronizar con scroll manteniendo estos principios.
 
-### Lenguaje de movimiento – Sistema de Ritmo Interno
+### Lenguaje de movimiento — Sistema de Ritmo Interno
 - Intencion: representar la respiracion interna de ANIMA PRIMA. Movimiento lento, continuo y sutil; no decorativo. La obra debe sentirse como una presencia viva, no como un conjunto de efectos.
-- Parametros de ritmo: duraciones largas (aprox. 12s / 14s / 18s) con `sine.inOut`; amplitudes reducidas (core: opacidad/escala ligera, texto: micro-flotacion vertical, atmosfera: variaciones minimas de opacidad/brightness).
+- Parametros de ritmo: duraciones largas (aprox. 12s / 14s / 18s) con `sine.inOut`; amplitudes reducidas (core: opacidad/escala ligera, texto: micro-flotacion vertical, atmósfera (`data-ritmo="atmosfera"`): variaciones minimas de opacidad/brightness).
 - Estados: atencion acelera ligeramente el tempo en hover/focus sobre core/texto; reposo es el estado base; transicion queda disponible para matizar tempos futuros. Siempre sutil, sin convertirlo en interaccion UI.
 - Coherencia por seccion: todas las secciones comparten el mismo lenguaje de respiracion; solo respira la seccion visible. Bloques como Origen pueden permanecer quietos de forma deliberada.
 - Accesibilidad: si `prefers-reduced-motion: reduce`, el Sistema de Ritmo Interno no se inicializa. La obra sigue siendo contemplativa desde composicion y texto sin movimiento. Posibles extensiones futuras pueden contemplar un tempo ultra lento, manteniendo el confort del usuario.
 
 Layout y composicion
 --------------------
-- Uso deliberado de espacio negativo como parte de la atmosfera.
+- Uso deliberado de espacio negativo como parte de la atmósfera.
 - Pocos elementos por pantalla, priorizando jerarquia y aire.
 - Centrados o alineados de forma que transmitan calma y precision.
 - Pensado desktop-first sin excluir ajustes responsive en tickets futuros.
+

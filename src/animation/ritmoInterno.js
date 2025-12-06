@@ -14,7 +14,7 @@ export function initRitmoInterno() {
 
   const coreElements = document.querySelectorAll('[data-ritmo="core"]');
   const textElements = document.querySelectorAll('[data-ritmo="texto"]');
-  const atmosphereElements = document.querySelectorAll('[data-ritmo="atmósfera"]');
+  const atmosphereElements = document.querySelectorAll('[data-ritmo="atmosfera"]');
 
   if (!coreElements.length && !textElements.length && !atmosphereElements.length) {
     return;
