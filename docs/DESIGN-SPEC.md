@@ -35,6 +35,13 @@ Principios de animacion y movimiento
 - Coherencia por seccion: todas las secciones comparten el mismo lenguaje de respiracion; solo respira la seccion visible. Bloques como Origen pueden permanecer quietos de forma deliberada.
 - Accesibilidad: si `prefers-reduced-motion: reduce`, el Sistema de Ritmo Interno no se inicializa. La obra sigue siendo contemplativa desde composicion y texto sin movimiento. Posibles extensiones futuras pueden contemplar un tempo ultra lento, manteniendo el confort del usuario.
 
+Capas futuras: audio, 3D, sincronia
+-----------------------------------
+- Audio: ambiente o susurro que acompaña el pulso, sin protagonismo ni efectos bruscos.
+- 3D: prolongar silencio y ritmo; sin espectaculo ni sobresaltos de luz.
+- Obras hermanas (Naturaleza Argentina, Verum Motus, UMBRAL): continuidad del ritmo interno, no collage.
+- Accesibilidad: toda capa futura respeta `prefers-reduced-motion`, evita cambios abruptos de luz/sonido y mantiene la legibilidad solo con texto + composicion.
+
 Layout y composicion
 --------------------
 - Uso deliberado de espacio negativo como parte de la atmósfera.
