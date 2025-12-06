@@ -5,11 +5,12 @@
 
 .manifesto__content {
   width: 100%;
-  max-width: 780px;
+  max-width: 60ch;
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
   margin: 0 auto;
+  color: var(--color-text-main);
 }
 
 .manifesto__title {
@@ -20,7 +21,7 @@
   margin: 0 0 var(--space-md);
   font-size: var(--font-size-lg);
   line-height: 1.85;
-  color: var(--color-text-muted);
+  color: var(--color-text-main);
 }
 
 .manifesto-text:last-child {
