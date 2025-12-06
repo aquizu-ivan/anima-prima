@@ -5,11 +5,14 @@
 
 .origen__content {
   width: 100%;
-  max-width: 780px;
+  max-width: 56ch;
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
   margin: 0 auto;
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-md);
+  color: var(--color-text-muted);
 }
 
 .origen__title {
@@ -17,7 +20,7 @@
 }
 
 .origen__lead {
-  margin: 0 0 var(--space-md);
+  margin: 0 0 var(--space-lg);
   font-size: var(--font-size-lg);
   line-height: 1.8;
   color: var(--color-text-muted);
@@ -66,6 +69,6 @@
 
 @media (min-width: 1024px) {
   .origen__content {
-    max-width: 60ch;
+    max-width: 56ch;
   }
 }
