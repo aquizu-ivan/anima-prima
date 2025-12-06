@@ -26,3 +26,10 @@ main {
   margin: 0 auto;
   padding: 0 var(--space-sm);
 }
+
+@media (max-width: 768px) {
+  .section {
+    min-height: auto;
+    padding: var(--space-lg) 0;
+  }
+}
