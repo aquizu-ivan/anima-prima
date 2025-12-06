@@ -17,9 +17,9 @@
 }
 
 .origen__lead {
-  margin: 0;
+  margin: 0 0 var(--space-md);
   font-size: var(--font-size-lg);
-  line-height: 1.7;
+  line-height: 1.8;
   color: var(--color-text-muted);
 }
 
@@ -48,8 +48,24 @@
 }
 
 .origen__project-desc {
-  margin: 0;
+  margin: 0 0 var(--space-md);
   font-size: var(--font-size-base);
   line-height: 1.7;
   color: var(--color-text-muted);
+}
+
+.origen__project-desc:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .origen__content {
+    padding-inline: var(--space-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  .origen__content {
+    max-width: 60ch;
+  }
 }

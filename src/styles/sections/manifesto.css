@@ -17,8 +17,24 @@
 }
 
 .manifesto-text {
-  margin: 0;
+  margin: 0 0 var(--space-md);
   font-size: var(--font-size-lg);
   line-height: 1.85;
   color: var(--color-text-muted);
+}
+
+.manifesto-text:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .manifesto__content {
+    padding-inline: var(--space-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  .manifesto__content {
+    max-width: 60ch;
+  }
 }
