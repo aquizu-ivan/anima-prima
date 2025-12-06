@@ -58,3 +58,12 @@ Responsabilidades por modulo
 - `styles/base.css`, `layout.css`, `typography.css`, `components.css`: capas globales que definen reset, grillas, jerarquias tipograficas y componentes minimos.
 - `styles/sections/*`: estilos especificos de cada seccion, cargados de forma modular para mantener la coherencia y el aislamiento visual.
 
+Extensión a audio / 3D / otras capas
+------------------------------------
+Ánima Prima puede extenderse con audio ambiental, capas 3D u obras hermanas del Octavo Arte (Verum Motus, UMBRAL) siempre que se anclen al mismo pulso del Sistema de Ritmo Interno. Evitar múltiples fuentes de tiempo desincronizadas: un único clock conceptual debe regir visual, audio y 3D.
+
+Lineamientos técnicos:
+- Toda capa nueva debe leer el tempo/factores por sección (RITMO_BASE / RITMO_SECCION) o un derivado simple para sostener coherencia.
+- Respetar `prefers-reduced-motion: reduce`: apagar la capa o moverla a un modo ultra suave; nunca ignorar la preferencia del usuario.
+- No introducir motores de animación paralelos que compitan con GSAP/ScrollTrigger sin un plan de sincronía explícito.
+- Un eventual “modo ultra lento” es optativo pero no reemplaza el respeto a reduce motion: no se fuerza movimiento si el usuario lo desactiva.

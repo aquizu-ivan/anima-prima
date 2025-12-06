@@ -27,3 +27,5 @@ Cada sección del recorrido existe como algo que late de manera suave; el ritmo 
 - Introducir variaciones suaves de tempo por sección para reforzar la identidad de cada bloque (ej. energía más viva, creación más amplia).
 - Extender los estados a un motor de escena compartido entre ritmo, audio y 3D.
 - Explorar un modo de movimiento mínimo para `prefers-reduced-motion` en vez de apagado total, manteniendo el confort del usuario.
+
+El mismo pulso que anima core/texto/atmosfera puede servir como referencia para audio o 3D, siempre respetando accesibilidad y calma.
