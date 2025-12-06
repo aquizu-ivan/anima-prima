@@ -5,6 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 let estadoRitmoGlobal = 'reposo';
 const tweensRitmo = [];
+let timeoutTransicion = null;
 
 const RITMO_BASE = {
   core: {
@@ -73,6 +74,12 @@ export function initRitmoInterno() {
 
   const setEstadoRitmo = (nuevoEstado) => {
     if (estadoRitmoGlobal === nuevoEstado) return;
+
+    if (timeoutTransicion) {
+      timeoutTransicion.kill?.();
+      timeoutTransicion = null;
+    }
+
     estadoRitmoGlobal = nuevoEstado;
 
     let targetTimeScale = 1;
@@ -92,6 +99,14 @@ export function initRitmoInterno() {
       duration: 1.2,
       ease: 'sine.inOut',
     });
+
+    if (nuevoEstado === 'transicion') {
+      timeoutTransicion = gsap.delayedCall(1.2, () => {
+        if (estadoRitmoGlobal === 'transicion') {
+          setEstadoRitmo('reposo');
+        }
+      });
+    }
   };
 
   const createSectionTween = (element, fromVars, toVars, section) => {
@@ -112,8 +127,14 @@ export function initRitmoInterno() {
       trigger: section || element,
       start: 'top 80%',
       end: 'bottom 20%',
-      onEnter: () => tween.play(),
-      onEnterBack: () => tween.play(),
+      onEnter: () => {
+        tween.play();
+        setEstadoRitmo('transicion');
+      },
+      onEnterBack: () => {
+        tween.play();
+        setEstadoRitmo('transicion');
+      },
       onLeave: () => tween.pause(),
       onLeaveBack: () => tween.pause(),
     });
