@@ -1,4 +1,4 @@
-# Sistema de Ritmo Interno — Ánima Prima
+﻿# Sistema de Ritmo Interno — Ánima Prima
 
 ## 1. Visión general
 El Sistema de Ritmo Interno es el pulso visual de Ánima Prima. No son efectos de scroll, sino la forma en que la obra respira y evidencia su presencia silenciosa.
@@ -26,4 +26,4 @@ Cada sección del recorrido existe como algo que late de manera suave; el ritmo 
 - Conectar el timeScale/estados con geometrías o escenas 3D (Verum Motus / UMBRAL) para que visual y audio/3D compartan el pulso.
 - Introducir variaciones suaves de tempo por sección para reforzar la identidad de cada bloque (ej. energía más viva, creación más amplia).
 - Extender los estados a un motor de escena compartido entre ritmo, audio y 3D.
-- Explorar un modo de “movimiento mínimo” para `prefers-reduced-motion` en vez de apagado total, manteniendo el confort del usuario.
+- Explorar un modo de "movimiento mínimo" para `prefers-reduced-motion` en vez de apagado total, manteniendo el confort del usuario.
