@@ -1,5 +1,16 @@
 import { gsap } from 'gsap';
 
+const reduceMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+const prefersReducedMotion = reduceMotionQuery.matches;
+
+const setIntroStaticState = (elements) => {
+  const { title, eyebrow, lead, cta } = elements;
+  if (title) gsap.set(title, { opacity: 1, y: 0 });
+  if (eyebrow) gsap.set(eyebrow, { opacity: 1, y: 0 });
+  if (lead) gsap.set(lead, { opacity: 1, y: 0 });
+  if (cta) gsap.set(cta, { opacity: 1, y: 0, scale: 1 });
+};
+
 export function initIntroAnimation() {
   const title = document.querySelector('.intro__title');
   const eyebrow = document.querySelector('.intro__eyebrow');
@@ -7,6 +18,12 @@ export function initIntroAnimation() {
   const cta = document.querySelector('.intro__cta');
 
   if (!title) return;
+
+  setIntroStaticState({ title, eyebrow, lead, cta });
+
+  if (prefersReducedMotion) {
+    return;
+  }
 
   const tl = gsap.timeline({
     defaults: {
