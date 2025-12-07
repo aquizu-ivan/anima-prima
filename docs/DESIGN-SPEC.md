@@ -3,7 +3,7 @@ Especificacion de diseno - ANIMA PRIMA
 
 Concepto central
 ----------------
-ANIMA PRIMA es una experiencia minimalista basada en cuerpo-mente-energia-creacion, vinculada a un manifiesto personal. Creada por IAQUIZU - IA-Extended Visual Systems Architect, es la obra de origen que antecede a piezas como Verum Motus y Umbral. Se busca transmitir calma, profundidad y foco, eliminando ruido visual y priorizando la intencion en cada seccion.
+ANIMA PRIMA es una experiencia minimalista basada en cuerpo-mente-energia-creacion, vinculada a un manifiesto personal. Creada por IAQUIZU — Origin Architect of the Eighth Art, es la obra de origen que antecede a piezas como Verum Motus y UMBRAL. Se busca transmitir calma, profundidad y foco, eliminando ruido visual y priorizando la intencion en cada seccion.
 
 La sensacion deseada es de respiracion y recogimiento: pocos elementos, silencios visuales y ritmo controlado para que cada transicion se sienta deliberada.
 
@@ -26,7 +26,7 @@ Principios de animacion y movimiento
 - Animaciones suaves con easings fluidos; evitar parpadeos o cambios bruscos.
 - Pocos elementos animados simultaneamente para preservar foco.
 - Movimiento que sugiera respiracion y transito interno entre estados.
-- GSAP es el motor principal; ScrollTrigger se integrara mas adelante para sincronizar con scroll manteniendo estos principios.
+- GSAP es el motor principal; ScrollTrigger ya acompana al Sistema de Ritmo Interno y se ampliara para sincronizar escenas de scroll manteniendo estos principios.
 
 ### Lenguaje de movimiento — Sistema de Ritmo Interno
 - Intencion: representar la respiracion interna de ANIMA PRIMA. Movimiento lento, continuo y sutil; no decorativo. La obra debe sentirse como una presencia viva, no como un conjunto de efectos.
