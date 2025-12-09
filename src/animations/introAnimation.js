@@ -3,6 +3,19 @@ import { gsap } from 'gsap';
 const reduceMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 const prefersReducedMotion = reduceMotionQuery.matches;
 
+const INTRO_DELAY = 0.5; // pre-silencio antes del primer pulso
+
+const INTRO_ANIMATION = {
+  duration: 1.6,
+  overlap: 0.35,
+  easing: 'sine.inOut',
+  titleOffset: 32,
+  eyebrowOffset: 18,
+  leadOffset: 18,
+  ctaOffset: 8,
+  ctaDuration: 1.4,
+};
+
 const setIntroStaticState = (elements) => {
   const { title, eyebrow, lead, cta } = elements;
   if (title) gsap.set(title, { opacity: 1, y: 0 });
@@ -26,24 +39,41 @@ export function initIntroAnimation() {
   }
 
   const tl = gsap.timeline({
+    delay: INTRO_DELAY,
     defaults: {
-      duration: 0.8,
-      ease: 'power2.out',
+      duration: INTRO_ANIMATION.duration,
+      ease: INTRO_ANIMATION.easing,
     },
   });
 
-  tl.from(title, { opacity: 0, y: 32 });
+  tl.from(title, { opacity: 0, y: INTRO_ANIMATION.titleOffset });
 
   if (eyebrow) {
-    tl.from(eyebrow, { opacity: 0, y: 16 }, '-=0.3');
+    tl.from(
+      eyebrow,
+      { opacity: 0, y: INTRO_ANIMATION.eyebrowOffset },
+      `-=${INTRO_ANIMATION.overlap}`,
+    );
   }
 
   if (lead) {
-    tl.from(lead, { opacity: 0, y: 16 }, '-=0.2');
+    tl.from(
+      lead,
+      { opacity: 0, y: INTRO_ANIMATION.leadOffset },
+      `-=${INTRO_ANIMATION.overlap}`,
+    );
   }
 
   if (cta) {
-    tl.from(cta, { opacity: 0, y: 16, scale: 0.96 });
+    tl.from(
+      cta,
+      {
+        opacity: 0,
+        y: INTRO_ANIMATION.ctaOffset,
+        duration: INTRO_ANIMATION.ctaDuration,
+      },
+      '+=0.15',
+    );
   }
 
   return tl;
