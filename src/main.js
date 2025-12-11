@@ -10,6 +10,7 @@ import './styles/sections/energia.css';
 import './styles/sections/creacion.css';
 import './styles/sections/manifesto.css';
 import './styles/sections/origen.css';
+import './styles/sections/contacto.css';
 
 import { domReady } from './core/domReady.js';
 import { initIntroAnimation } from './animations/introAnimation.js';

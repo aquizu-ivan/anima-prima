@@ -1,0 +1,32 @@
+.contacto {
+  display: flex;
+  justify-content: center;
+}
+
+.contacto__content {
+  width: 100%;
+  max-width: 56ch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin: 0 auto;
+  padding-inline: var(--space-md);
+}
+
+.contacto__title {
+  margin: 0;
+  color: var(--color-text-main);
+}
+
+.contacto__lead {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  line-height: 1.8;
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 1024px) {
+  .contacto__content {
+    max-width: 56ch;
+  }
+}

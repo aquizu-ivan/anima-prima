@@ -15,6 +15,17 @@
 
 .manifesto__title {
   margin: 0 0 var(--space-md);
+  position: relative;
+  padding-bottom: var(--space-xs);
+}
+
+.manifesto__title::after {
+  content: '';
+  display: block;
+  width: 88px;
+  height: 2px;
+  margin-top: var(--space-xs);
+  background: var(--color-accent-soft);
 }
 
 .manifesto-text {
