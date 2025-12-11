@@ -12,27 +12,27 @@ const INTRO_ANIMATION = {
   titleOffset: 32,
   eyebrowOffset: 18,
   leadOffset: 18,
-  ctaOffset: 8,
-  ctaDuration: 1.4,
+  hintOffset: 8,
+  hintDuration: 1.4,
 };
 
 const setIntroStaticState = (elements) => {
-  const { title, eyebrow, lead, cta } = elements;
+  const { title, eyebrow, lead, hint } = elements;
   if (title) gsap.set(title, { opacity: 1, y: 0 });
   if (eyebrow) gsap.set(eyebrow, { opacity: 1, y: 0 });
   if (lead) gsap.set(lead, { opacity: 1, y: 0 });
-  if (cta) gsap.set(cta, { opacity: 1, y: 0, scale: 1 });
+  if (hint) gsap.set(hint, { opacity: 1, y: 0 });
 };
 
 export function initIntroAnimation() {
   const title = document.querySelector('.intro__title');
   const eyebrow = document.querySelector('.intro__eyebrow');
   const lead = document.querySelector('.intro__lead');
-  const cta = document.querySelector('.intro__cta');
+  const hint = document.querySelector('.intro__hint');
 
   if (!title) return;
 
-  setIntroStaticState({ title, eyebrow, lead, cta });
+  setIntroStaticState({ title, eyebrow, lead, hint });
 
   if (prefersReducedMotion) {
     return;
@@ -64,13 +64,13 @@ export function initIntroAnimation() {
     );
   }
 
-  if (cta) {
+  if (hint) {
     tl.from(
-      cta,
+      hint,
       {
         opacity: 0,
-        y: INTRO_ANIMATION.ctaOffset,
-        duration: INTRO_ANIMATION.ctaDuration,
+        y: INTRO_ANIMATION.hintOffset,
+        duration: INTRO_ANIMATION.hintDuration,
       },
       '+=0.15',
     );
