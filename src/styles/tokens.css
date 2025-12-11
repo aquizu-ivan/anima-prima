@@ -4,8 +4,9 @@
   --color-bg-alt: #0d0f12;
   --color-text-main: #f3f3ec;
   --color-text-muted: #c5c7c0;
-  --color-accent-1: #f08f57;
-  --color-accent-2: #7ad9c2;
+  --color-accent-primary: #c99b4a;
+  --color-accent-secondary: #a87d37;
+  --color-accent-soft: rgba(201, 155, 74, 0.16);
 
   /* Space */
   --space-xs: 0.5rem;

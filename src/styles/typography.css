@@ -9,7 +9,7 @@ body {
 p,
 li {
   font-size: var(--font-size-base);
-  line-height: 1.7;
+  line-height: 1.75;
   margin: 0 0 var(--space-sm);
   color: var(--color-text-main);
 }
@@ -24,13 +24,15 @@ h4 {
 }
 
 h1 {
-  font-size: var(--font-size-xxl);
-  letter-spacing: 0.08em;
+  font-size: clamp(2.2rem, 3.6vw, 3.6rem);
+  letter-spacing: 0.06em;
+  line-height: 1.2;
 }
 
 h2 {
-  font-size: var(--font-size-xl);
-  color: var(--color-accent-1);
+  font-size: clamp(1.35rem, 2vw, 1.9rem);
+  color: var(--color-accent-primary);
+  line-height: 1.25;
 }
 
 .manifesto-text {

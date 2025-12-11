@@ -1,5 +1,5 @@
 a {
-  color: var(--color-accent-1);
+  color: var(--color-accent-primary);
   text-decoration: none;
   transition: color var(--motion-duration-short) var(--motion-ease-base),
     text-decoration-color var(--motion-duration-short) var(--motion-ease-base);
@@ -7,13 +7,13 @@ a {
 }
 
 a:hover {
-  color: var(--color-accent-2);
+  color: var(--color-accent-secondary);
   text-decoration: underline;
   text-decoration-color: currentColor;
 }
 
 a:focus-visible {
-  outline: 2px solid var(--color-accent-2);
+  outline: 2px solid var(--color-accent-primary);
   outline-offset: 2px;
 }
 
@@ -23,9 +23,9 @@ a:focus-visible {
   justify-content: center;
   gap: var(--space-xs);
   padding: var(--space-xs) var(--space-md);
-  background-color: var(--color-accent-1);
+  background-color: var(--color-accent-primary);
   color: var(--color-bg-main);
-  border: 1px solid var(--color-accent-1);
+  border: 1px solid var(--color-accent-primary);
   border-radius: 999px;
   font-size: var(--font-size-sm);
   font-weight: 600;
@@ -38,12 +38,12 @@ a:focus-visible {
 
 .btn:hover {
   transform: translateY(-1px);
-  background-color: var(--color-accent-2);
-  border-color: var(--color-accent-2);
+  background-color: var(--color-accent-secondary);
+  border-color: var(--color-accent-secondary);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
 
 .btn:focus-visible {
-  outline: 2px solid var(--color-accent-2);
+  outline: 2px solid var(--color-accent-primary);
   outline-offset: 3px;
 }
