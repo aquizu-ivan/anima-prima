@@ -47,3 +47,33 @@ a:focus-visible {
   outline: 2px solid var(--color-accent-primary);
   outline-offset: 3px;
 }
+
+.footer {
+  padding: var(--space-xl) 0 var(--space-lg);
+}
+
+.footer__content {
+  text-align: center;
+  font-size: 0.85em;
+  line-height: 1.6;
+}
+
+.footer__line {
+  margin: 0;
+}
+
+.footer__line + .footer__line {
+  margin-top: 0.25rem;
+}
+
+.footer__line--title {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__line--author {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.footer__line--legal {
+  color: rgba(255, 255, 255, 0.35);
+}
